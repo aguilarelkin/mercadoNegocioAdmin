@@ -18,4 +18,4 @@ Tecnologias implementadas de React y Spring
 
 
 ## Aplicación
-[Github-Markdown-Url](https://i.postimg.cc/sg7x7m7f/2022-YAM-MT10-EU-DPBMC-SPORTPACK-ACCSTA-001.jpg)
+![2022_YAM_MT10_EU_DPBMC_SPORTPACK_ACCSTA_001](https://github.com/aguilarelkin/mercadoNegocioAdmin/assets/46634666/21d4bd5a-bb07-4c3a-8590-e2f5f1068652)
