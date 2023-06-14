@@ -1,9 +1,9 @@
 package com.mercado.app.mercadol.models.entity;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,7 +17,7 @@ public class Producto {
     private Long id;
 
     @NotEmpty(message = "no puede estar vacio")
-    @Size(min = 4, message = "Mínimo de cuatro números")
+    @Size(min = 3, message = "Mínimo de tres números")
     @Column(nullable = false, unique = true)
     private String nombre;
 

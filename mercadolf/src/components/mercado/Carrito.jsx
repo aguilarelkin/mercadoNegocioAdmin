@@ -37,7 +37,6 @@ function Carrito() {
         if (sesion) {
             setUser(getUsuario().id);
             getData()
-            console.log("asdfsdfs")
         }
 
     }

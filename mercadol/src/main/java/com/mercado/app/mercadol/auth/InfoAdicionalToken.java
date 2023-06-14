@@ -3,23 +3,20 @@ package com.mercado.app.mercadol.auth;
 import com.mercado.app.mercadol.models.entity.Cliente;
 import com.mercado.app.mercadol.models.service.IClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
-import org.springframework.security.oauth2.common.OAuth2AccessToken;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
-import org.springframework.security.oauth2.provider.token.TokenEnhancer;
+
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
-public class InfoAdicionalToken implements TokenEnhancer {
+/*@Component*/
+public class InfoAdicionalToken /*implements TokenEnhancer*/ {
 
     @Autowired
     private IClienteService clienteService;
 
 
-    @Override
+    /*@Override
     public OAuth2AccessToken enhance(OAuth2AccessToken oAuth2AccessToken, OAuth2Authentication oAuth2Authentication) {
 
         Cliente cliente = clienteService.findClientEmail(oAuth2Authentication.getName());
@@ -37,5 +34,5 @@ public class InfoAdicionalToken implements TokenEnhancer {
         ((DefaultOAuth2AccessToken) oAuth2AccessToken).setAdditionalInformation(info);
 
         return oAuth2AccessToken;
-    }
+    }*/
 }

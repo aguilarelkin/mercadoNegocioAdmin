@@ -3,7 +3,6 @@ package com.mercado.app.mercadol.controllers;
 import com.mercado.app.mercadol.models.dao.IClienteDao;
 import com.mercado.app.mercadol.models.entity.Cliente;
 import com.mercado.app.mercadol.models.entity.Factura;
-import com.mercado.app.mercadol.models.entity.ItemFactura;
 import com.mercado.app.mercadol.models.entity.Producto;
 import com.mercado.app.mercadol.models.service.IFacturaService;
 import com.mercado.app.mercadol.models.service.IOperationFacturaService;
@@ -74,6 +73,7 @@ public class FacturaController {
         Optional<Cliente> cliente = null;
 
         Integer cant = 0, cantReal = 0, cantItem = 0;
+
 
         if (factura.getCliente().getId() != null) {
 

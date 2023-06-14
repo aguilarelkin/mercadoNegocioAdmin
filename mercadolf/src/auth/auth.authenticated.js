@@ -1,12 +1,11 @@
 import { logout } from "../session/operation.login";
 import { getToken, getUsuario } from "./auth.token.user";
 
-
 export const isAutenticated = () => {
     let payload = obtenerDatoToken(getToken());
 
     if (!isTokenExpired()) {
-        if (payload !== null && payload.user_name && payload.user_name.length > 0) {
+        if (payload !== null && payload.sub && payload.sub.length > 0) {
             return true;
         } else {
             return false;
@@ -17,7 +16,11 @@ export const isAutenticated = () => {
 }
 const isTokenExpired = () => {
     let payload = obtenerDatoToken(getToken());
+
+   
     let nowDate = new Date().getTime() / 1000;
+
+
     if (payload !== null) {
         if (payload.exp < nowDate) {
             return true;

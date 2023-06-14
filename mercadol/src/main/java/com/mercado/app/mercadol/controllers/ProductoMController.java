@@ -15,7 +15,7 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.List;
@@ -61,7 +61,7 @@ public class ProductoMController {
     @GetMapping("/products/page/{page}")
     public Page<Producto> getProductoPage(@PathVariable Integer page) {
 
-        return productoService.findAllProduct(PageRequest.of(page, 5));
+        return productoService.findAllProduct(PageRequest.of(page, 8));
     }
 
 

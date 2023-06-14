@@ -8,6 +8,8 @@ import Carrito from './components/mercado/Carrito';
 import Register from './components/mercado/Registrer';
 import { isAutenticated, hasRole } from './auth/auth.authenticated';
 import { Protected } from './interceptor/Protected';
+import Authorized from './components/Auth';
+import Logout from './components/Logout';
 
 
 function App() {
@@ -28,14 +30,21 @@ function App() {
 
   return (
 
-    <HashRouter>
+    <BrowserRouter>
       {//console.log(" ad " + sesion)
       }
       {//console.log(roles.includes('ROLE_ADMIN', 'ROLE_USER'))
       }
 
       <Routes>
-
+      <Route path='/authorized' element={
+            <Authorized />
+          }
+          />
+          <Route path='/logout' element={
+            <Logout />
+          }
+          />
         <Route path='/' element={
           <Protected sesion={sesion} redirectTo="/">
             <Login />
@@ -64,7 +73,7 @@ function App() {
         } />
 
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
 
   );
 }

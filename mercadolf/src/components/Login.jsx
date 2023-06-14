@@ -6,6 +6,7 @@ import { getUsuario } from "../auth/auth.token.user";
 import { guardarToken, guardarUser } from "../auth/token.login";
 import { loginData } from "../services/loginApi";
 import Navigation from "./auxiliarcomponent/Navigation";
+import generar from "../services/auth";
 
 function Login() {
 
@@ -19,14 +20,16 @@ function Login() {
         () => {
             if (isAutenticated()) {
                 setSesion(isAutenticated());
-                Swal.fire('Login', `${getUsuario().username} ya estás autenticado`, 'info')
+                // Swal.fire('Login', `${getUsuario().username} ya estás autenticado`, 'info')
                 history("/mercadolibre")
+            } else {
+                generar();
             };
         }, []
     );
 
     const login = async (event) => {
-        event.preventDefault();
+        /*event.preventDefault();
 
         if (username === "" || password === "") {
             Swal.fire('Datos requeridos', 'Ingresar campos vacios', 'info')
@@ -65,12 +68,13 @@ function Login() {
             } catch (error) {
 
             }
-        }
+        }*/
         //33:14
     }
 
     return (
         <>
+            {/*
             {sesion}
             <Navigation sesion={sesion} roles={sesion ? hasRole() : []} />
 
@@ -99,6 +103,7 @@ function Login() {
                     </form>
                 </div>
             </center>
+    */}
 
 
 {/*
