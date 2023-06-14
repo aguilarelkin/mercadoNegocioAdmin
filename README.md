@@ -8,7 +8,7 @@
 ## Desarrollado con React y Spring
 
 
-Tecnologias implementadas de React y Spring 
+Tecnologías implementadas de React y Spring 
 
 - Sprind Data JPA
 - Lombook
@@ -21,7 +21,9 @@ Tecnologias implementadas de React y Spring
 
 ## Features
 
-- 
+- Válida  cada una de las funciones que se procesan.
+- Requiere ingreso de credenciales para realizar compra de productos.
+- Permite agregar o eliminar un producto.
 
 
 ## Aplication
