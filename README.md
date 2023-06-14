@@ -1,11 +1,22 @@
-# Proyecto para Administrar productos 
+# Aplicación Web
+## Permite crear una cuenta e iniciar sesión. 
+## Permite seleccionar productos para agregar al carrito de compras.
+## Permite visualizar los productos del negocio.
+## Permite ver el carrito de compras y finalizar la compra.
+
 ## Desarrollado con React y Spring
 
 
 Tecnologias implementadas de React y Spring 
 
 - Sprind Data JPA
-- Spring Security y Aouth2
+- Lombook
+- Spring Security y OAuth2
+- Validaciones Front/Back
+- React Hooks
+- React Router
+- MySQL
+
 
 ## Features
 
@@ -13,4 +24,4 @@ Tecnologias implementadas de React y Spring
 - Requiere ingreso de credenciales para realizar operaciones CRUD
 
 
-## Installation Fronted (mercadolf)
+## Aplication
